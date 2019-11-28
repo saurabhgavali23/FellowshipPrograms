@@ -1,18 +1,22 @@
 package Test;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Arrays;
 
 import com.bridgelabz.utility.Utility;
 
-public class BinarySearchUsingGeneric<T> {
+public class BinarySearchUsingGeneric {
 	
 	public static void binarySearch() throws IOException
 	{
-		List arr=Utility.readFile("inputFile");
-		System.out.println(arr.size());
-		for(int i=0;i<arr.size();i++)
-			System.out.print(arr.get(i)+" ");
+		String arr[]=Utility.readFile("InputFile.txt");
+		System.out.println(Arrays.toString(arr));
+		
+		Arrays.sort(arr);
+		
+		
+		Utility.binrySearch(arr, "shubham");
+		
 	}
 	
 	public static void main(String[] args) throws IOException {

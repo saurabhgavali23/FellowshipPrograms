@@ -1,17 +1,20 @@
 package com.bridgelabz.algorithmprogram;
 
+import java.io.IOException;
+import java.util.Arrays;
+
 import com.bridgelabz.utility.Utility;
 
 public class BubbleSort {
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		int arr[]= {4,5,1,2,8,3,7};
+		String arr[]= Utility.readFile("WordFile.txt");
 		
 		System.out.println("Enter the array");
 		
-		int arr1[]=Utility.bubbleSort(arr);
-		
+		arr=Utility.bubbleSort(arr);
+		System.out.println(Arrays.toString(arr));
 	}
 }

@@ -25,10 +25,10 @@ public class DecimalToBinary {
 	}
 	public static void main(String[] args) {
 		
-		ArrayList l=new ArrayList();
+		ArrayList<Integer> l=new ArrayList<Integer>();
 		int n=0;
 		l.add(1250);
-		Iterator it=l.iterator();
+		Iterator<Integer> it=l.iterator();
 		while(it.hasNext())
 		{
 			n=(int) it.next();

@@ -1,6 +1,6 @@
 package Test;
 
-public class BinarySearchUsingLinkedList {
+public class BinarySearchUsingLinkedList{
 
 	Node head;
 	int size=0;
@@ -101,7 +101,7 @@ public class BinarySearchUsingLinkedList {
 		list=addNode(list,50);
 		
 		printList(list);
-		
+		System.out.println();
 		BinarySearch(list, 50);
 		
 		
