@@ -33,6 +33,6 @@ public class Gambler {
 		}
 		System.out.println(win+" of "+trails);
 		System.out.println("Percentage of wins "+ 100.0*win/trails);
-		System.out.println("Percentage of bear "+ 1.0*beat/trails);
+		System.out.println("Percentage of beat "+ 1.0*beat/trails);
 	}
 }

@@ -27,7 +27,7 @@ public class DecimalToBinary {
 		
 		ArrayList<Integer> l=new ArrayList<Integer>();
 		int n=0;
-		l.add(1250);
+		l.add(12);
 		Iterator<Integer> it=l.iterator();
 		while(it.hasNext())
 		{

@@ -343,6 +343,27 @@ public class Utility {
 		
 	}
 	
+	public static String decToBinary(int n)
+	{
+		int sum[]=new int[16];
+		String str ="";
+		int r,i=0;
+		while(0<n)
+		{
+			r=n%2;
+			sum[i]=r;
+			n=n/2;
+			i++;
+		}
+		for(int j=i-1;j>=0;j--)
+		{
+			//System.out.print(sum[j]+" ");
+			str+=String.valueOf(sum[j]);
+		}
+		System.out.println();
+		return str;
+	}
+	
 	public static boolean checkPalindrome(int n)
 	{
 		int sum=0,r=0;
